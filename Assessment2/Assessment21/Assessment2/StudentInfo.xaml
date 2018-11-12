@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Assessment2.StudentInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assessment2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Beige">
+        <TextBlock Text="New Student" Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <StackPanel x:Name="studentSP" VerticalAlignment="Center">
+            <TextBox x:Name="txtStudentID" Header="StudentID:"/>
+            <TextBox x:Name="txtName" Header="Name:"/>
+            <TextBox x:Name="txtEmail" Header="Email:"/>
+            <TextBox x:Name="txtTelNumber" Header="Tel Number:"/>
+            <Button x:Name="btnSave" Content="Save" Click="btnSave_Click" Margin="20" HorizontalAlignment="Center" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Page>

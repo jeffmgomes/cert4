@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Assessment2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Assessment2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="LightBlue">
+        <StackPanel x:Name="welcomeSP" Orientation="Horizontal">
+            <TextBlock Text="Welcome!" Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" Margin="0,20,20,0"/>
+            <TextBlock x:Name="tbxUser" Style="{StaticResource HeaderTextBlockStyle}" HorizontalAlignment="Center" Margin="0,20,0,0" FontWeight="Black"/>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button x:Name="btnNewStudent" Content="New Student" Click="btnNewStudent_Click" Margin="20" HorizontalAlignment="Center" Width="150" Height="60"/>
+            <Button x:Name="btnStudentDetails" Content="Student" Click="btnStudentDetails_Click" Margin="20" HorizontalAlignment="Center" Width="150" Height="60"/>
+        </StackPanel>
+    </Grid>
+</Page>
